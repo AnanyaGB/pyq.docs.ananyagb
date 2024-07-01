@@ -61,6 +61,15 @@ const Metadata = ({ data }) => {
   );
 };
 
+export function generateMetadata({ params }) {
+  const { slug } = params;
+  const { data } = getData(slug);
+
+  return {
+    title: `${data.code} (${data.title}) - ${data.subject} ${data.year}: PYQ | Docs - AnanyaGB`,
+  };
+}
+
 export default function Solutions({ params }) {
   const { slug } = params;
   const { data, content } = getData(slug);
