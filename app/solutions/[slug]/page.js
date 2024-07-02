@@ -27,7 +27,7 @@ const Metadata = ({ data }) => {
         }`}
       >
         <span className="text-xs uppercase">{tag}</span>
-        <span className="md:text-lg">{children}</span>
+        <span className="font-medium">{children}</span>
       </div>
     );
   };
@@ -51,7 +51,7 @@ const Metadata = ({ data }) => {
   ];
 
   return (
-    <div className="bg-white rounded-lg border p-4 -mx-4 md:mx-0 md:p-8 grid grid-cols-2 gap-8">
+    <div className="bg-white rounded-xl border border-x-0 lg:border-x p-4 -mx-4 md:mx-0 md:p-8 grid grid-cols-2 gap-8">
       {metadata.map(([tag, datum, span], index) => (
         <Block tag={tag} span={span} key={index}>
           {datum}
@@ -83,7 +83,7 @@ export default function Solutions({ params }) {
           </div>
           <div className="lg:flex-[2]">
             <div className="mb-6 text-xl font-bold">Solution</div>
-            <div className="bg-white -mx-4 rounded-lg border p-4 md:p-8 md:py-12">
+            <div className="bg-white -mx-4 rounded-xl border p-4 py-8 border-x-0 lg:border-x md:p-8 md:py-12">
               <div className="mb-12 text-center text-xs py-1 italic bg-yellow-200 uppercase overflow-hidden relative h-6">
                 <div className="flex gap-2 absolute top-1/2 -left-4 -translate-y-1/2">
                   {[1, 2, 3, 4, 5, 6, 7, 8].map((item, index) => (

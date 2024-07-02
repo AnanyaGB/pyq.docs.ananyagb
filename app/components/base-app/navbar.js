@@ -41,9 +41,9 @@ export default function Navbar() {
   const NavLink = ({ data, ...rest }) => {
     return (
       <Link href={data.uri} target={data.ext ? "_blank" : "_self"} {...rest}>
-        <span className="flex items-center text-slate-500 hover:text-slate-900">
+        <span className="flex gap-1 items-center text-slate-500 hover:text-slate-900">
           <span>{data.text}</span>
-          {data.ext && <ArrowUpRightIcon className="h-4 w-4" />}
+          {data.ext && <ArrowUpRightIcon className="h-3 w-3" />}
         </span>
       </Link>
     );
@@ -53,11 +53,11 @@ export default function Navbar() {
     return (
       <Link href={data.uri} target={data.ext ? "_blank" : "_self"} {...rest}>
         <button
-          className="flex items-center w-full p-4 border-b text-slate-500 active:text-slate-900"
+          className="flex items-center w-full gap-1 p-4 border-b text-slate-500 active:text-slate-900"
           onClick={() => setShowMenu(false)}
         >
           <span>{data.text}</span>
-          {data.ext && <ArrowUpRightIcon className="h-4 w-4" />}
+          {data.ext && <ArrowUpRightIcon className="h-3 w-3" />}
         </button>
       </Link>
     );

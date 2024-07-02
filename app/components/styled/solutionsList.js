@@ -38,7 +38,7 @@ const SolutionsListItem = ({ data, ...rest }) => {
 const SolutionsList = ({ data }) => {
   return (
     <div className="overflow-x-scroll md:overflow-hidden relative w-full">
-      <div className="rounded-lg overflow-hidden bg-white border min-w-[300%] md:min-w-full">
+      <div className="rounded-xl overflow-hidden bg-white border min-w-[300%] md:min-w-full">
         <div className="grid grid-cols-6 gap-4 px-4 font-bold py-3">
           <span>Code</span>
           <span>Subject</span>
